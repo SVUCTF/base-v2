@@ -5,6 +5,8 @@ on:
     branches: ["main"]
     paths:
       - "php-nginx/**"
+      - "!php-nginx/Dockerfile-*"
+      - "php-nginx/Dockerfile-7.4"
   workflow_dispatch:
 
 env:
